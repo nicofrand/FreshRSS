@@ -1,6 +1,6 @@
 ﻿# FreshRSS changelog
 
-## 2018-10-XX FreshRSS 1.11.3-dev
+## 2018-10-28 FreshRSS 1.12.0
 
 * Features
 	* Ability to add *labels* (custom tags) to articles [#928](https://github.com/FreshRSS/FreshRSS/issues/928)
@@ -30,6 +30,9 @@
 	* Ask confirmation for important configuration actions [#2048](https://github.com/FreshRSS/FreshRSS/pull/2048)
 	* Fix database size in the Web UI for users about to be deleted [#2047](https://github.com/FreshRSS/FreshRSS/pull/2047)
 	* Fix actualize bug after install [#2044](https://github.com/FreshRSS/FreshRSS/pull/2044)
+	* Fix manual / Web actualize for which the final commit coud be done too early [#2081](https://github.com/FreshRSS/FreshRSS/pull/2081)
+	* Fix regression from version 1.11.2, which might have wrongly believed that the server address was private [#2084](https://github.com/FreshRSS/FreshRSS/pull/2084)
+		* Please check in `data/config.php` that you have `'pubsubhubbub_enabled' => true,` if your server has a public address
 * Extensions
 	* Update built-in extension to again fix Tumblr feeds from European Union due to GDPR [#2053](https://github.com/FreshRSS/FreshRSS/pull/2053)
 * I18n
